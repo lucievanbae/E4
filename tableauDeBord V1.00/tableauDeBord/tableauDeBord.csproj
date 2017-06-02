@@ -1,0 +1,341 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9CA7A835-CAB5-4A44-9F6F-27E2310A552F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TableauDeBord</RootNamespace>
+    <AssemblyName>TableauDeBord</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Accueil.cs">
+      <SubType>Form</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Accueil.Designer.cs">
+      <DependentUpon>Accueil.cs</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Choix.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Choix.Designer.cs">
+      <DependentUpon>Choix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CoutTotal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CoutTotal.Designer.cs">
+      <DependentUpon>CoutTotal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tableau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tableau.Designer.cs">
+      <DependentUpon>Tableau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pourcentages.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pourcentages.Designer.cs">
+      <DependentUpon>Pourcentages.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DureeMoy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DureeMoy.Designer.cs">
+      <DependentUpon>DureeMoy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Occupation.cs" />
+    <Compile Include="Passerelle.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="tableaudebordDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tableaudebordDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tableaudebordDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tableaudebordDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tableaudebordDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tableaudebordDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tableaudebordDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tableaudebordDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tableaudebordDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tableaudebordDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tableaudebordDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tableaudebordDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tableaudebordDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tableaudebordDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tableaudebordDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tableaudebordDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tableaudebordDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tableaudebordDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tableaudebordDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tableaudebordDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tableaudebordDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tableaudebordDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tableaudebordDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tableaudebordDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TableauMedoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TableauMedoc.Designer.cs">
+      <DependentUpon>TableauMedoc.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Accueil.resx">
+      <DependentUpon>Accueil.cs</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Choix.resx">
+      <DependentUpon>Choix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoutTotal.resx">
+      <DependentUpon>CoutTotal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tableau.resx">
+      <DependentUpon>Tableau.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pourcentages.resx">
+      <DependentUpon>Pourcentages.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DureeMoy.resx">
+      <DependentUpon>DureeMoy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="TableauMedoc.resx">
+      <DependentUpon>TableauMedoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="tableaudebordDataSet.xsc">
+      <DependentUpon>tableaudebordDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="tableaudebordDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tableaudebordDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tableaudebordDataSet.xss">
+      <DependentUpon>tableaudebordDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="tableaudebordDataSet1.xsc">
+      <DependentUpon>tableaudebordDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="tableaudebordDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tableaudebordDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tableaudebordDataSet1.xss">
+      <DependentUpon>tableaudebordDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="tableaudebordDataSet10.xsc">
+      <DependentUpon>tableaudebordDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="tableaudebordDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tableaudebordDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tableaudebordDataSet10.xss">
+      <DependentUpon>tableaudebordDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="tableaudebordDataSet11.xsc">
+      <DependentUpon>tableaudebordDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="tableaudebordDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tableaudebordDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tableaudebordDataSet11.xss">
+      <DependentUpon>tableaudebordDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="tableaudebordDataSet2.xsc">
+      <DependentUpon>tableaudebordDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="tableaudebordDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tableaudebordDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tableaudebordDataSet2.xss">
+      <DependentUpon>tableaudebordDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="tableaudebordDataSet3.xsc">
+      <DependentUpon>tableaudebordDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="tableaudebordDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tableaudebordDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tableaudebordDataSet3.xss">
+      <DependentUpon>tableaudebordDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="tableaudebordDataSet4.xsc">
+      <DependentUpon>tableaudebordDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="tableaudebordDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tableaudebordDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tableaudebordDataSet4.xss">
+      <DependentUpon>tableaudebordDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="tableaudebordDataSet5.xsc">
+      <DependentUpon>tableaudebordDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="tableaudebordDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tableaudebordDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tableaudebordDataSet5.xss">
+      <DependentUpon>tableaudebordDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="tableaudebordDataSet6.xsc">
+      <DependentUpon>tableaudebordDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="tableaudebordDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tableaudebordDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tableaudebordDataSet6.xss">
+      <DependentUpon>tableaudebordDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="tableaudebordDataSet7.xsc">
+      <DependentUpon>tableaudebordDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="tableaudebordDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tableaudebordDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tableaudebordDataSet7.xss">
+      <DependentUpon>tableaudebordDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="tableaudebordDataSet8.xsc">
+      <DependentUpon>tableaudebordDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="tableaudebordDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tableaudebordDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tableaudebordDataSet8.xss">
+      <DependentUpon>tableaudebordDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="tableaudebordDataSet9.xsc">
+      <DependentUpon>tableaudebordDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="tableaudebordDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tableaudebordDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tableaudebordDataSet9.xss">
+      <DependentUpon>tableaudebordDataSet9.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
